@@ -1,0 +1,17 @@
+.product-card {
+    background: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    border: 5px solid black;
+}
+.product-image {
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+}
+.product-title {
+  font-size: 30px;
+}
