@@ -53,32 +53,20 @@
     //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
 
 
-    let x = [{name: 'Dima', age: 13}, {model: 'Camry'}];
+    let x = [{name: 'Dima', age: 13},
+            {model: 'Camry'}];
     function f(X) {
-        let result = [];
-        for (const xobject of x) {
+        let y = [];
+        y[0] = x[0].name;
+        y[1] = x[0].age;
+        y[2] = x[1].model;
 
-        }
-
+        return y;
     }
+console.log(f(x))
 
 
 
-
-
-
-
-
-//     function f(x, y) {
-//         let a = [];
-//         for (let i = 0; i < arr.length; i++) {
-//
-//         let a[i] = x[i] + y[i];
-//         return a
-//         }
-// console.log(a)
-//     }
-// зробити через пуш і new array new array
 
 
 
