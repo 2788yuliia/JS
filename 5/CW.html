@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    // - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+
+//     let f = (a, b, c) => {
+//         if (a<b && a<c) {console.log(a)}
+//         else if (b<a && b<c) {console.log(b)}
+//         else if (c<a && c<b) {console.log(c)}
+//     }
+// f(5, 2, 3)
+
+    // - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+
+    //     let f = (a, b, c) => {
+    //         if (a>b && a>c) {console.log(a)}
+    //         else if (b>a && b>c) {console.log(b)}
+    //         else if (c>a && c>b) {console.log(c)}
+    //     }
+    // f(5, 2, 8)
+
+
+    // - створити функцію яка повертає найбільше число з масиву
+
+//     let x = [3, 5, 9, 4];
+//
+//     let f = (arr) => {
+//         let max = arr[arr.length-1];
+//         for (let i = 0; i < arr.length-1; i++) {
+//            if (arr[i]>arr[i+1]) {
+//                max = arr[i];
+//            }
+//         }
+//         console.log(max)
+//     }
+// f(x)
+
+
+    // - створити функцію яка повертає найменьше число з масиву
+
+//     let x = [3, 5, 1, 4];
+//     let f = (arr) => {
+//         let min = arr[0];
+//         for (const minElement of arr) {
+//             if (minElement < min) {
+//                 min = minElement;
+//             }
+//         }
+//         return min;
+//     }
+// console.log(f(x))
+
+
+    // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+
+//     let x = [3, 5, 1, 4];
+//     let f = (arr) => {
+//         let sum = 0;
+//         for (let i = 0; i < arr.length; i++) {
+//             const arrElement = arr[i];
+//             sum = sum + arrElement;
+//         }
+//         return sum;
+//     }
+// console.log(f(x))
+//
+
+    // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+    //
+    // let x = [3, 5, 1, 4];
+    //     let f = (arr) => {
+    //         let sum = 0;
+    //         for (let i = 0; i < arr.length; i++) {
+    //             const arrElement = arr[i];
+    //             sum = sum + arrElement;
+    //         }
+    //         return sum/arr.length;
+    //     }
+    // console.log(f(x))
+
+
+
+    // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+    // let x = [3, 5, 1, 4];
+    //  let f = (arr) => {
+    //     let min = arr[0];
+    //     let max = arr[0];
+    //     for (let i = 1; i < arr.length; i++) {
+    //         if (min > arr[i]) {
+    //             min = arr[i]
+    //         }
+    //         if (max < arr[i]) {
+    //             max = arr[i]
+    //         }
+    //     }
+    //     document.write('max:' + max)
+    //     return min;
+    // }
+    // let res = f(x);
+    // console.log('min: ' + res)
+
+
+    // - створити функцію яка заповнює масив рандомними числами
+//     let arr = []
+// let f = (arr, num) => {
+//     for (let i = 0; i < num; i++) {
+//
+//         arr[i] = Math.round(Math.random()*100)
+//     }
+//     console.log(arr);
+// }
+//   f(arr, 5)
+//
+
+    // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+
+    // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+
+    // let arr = []
+    // let f = (arr, num, limit) => {
+    //     for (let i = 0; i < num; i++) {
+    //
+    //         arr[i] = Math.round(Math.random()*limit)
+    //     }
+    //     console.log(arr);
+    // }
+    //   f(arr, 5, 50)
+    //
+
+
+    // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
+    // let x = [1, 2, 3, 4]
+    // const reverse = (arr) => {
+    //     let newArr = [];
+    //     for (let i = arr.length - 1, ri = 0; i >= 0; i--, ri++) {
+    //         newArr[ri] = arr[i];
+    //     }
+    //
+    //     return newArr;
+    // }
+    // console.log(reverse(x));
+    //
+
+</script>
+</body>
+</html>
