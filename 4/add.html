@@ -53,18 +53,31 @@
     //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
 
 
+//     let x = [{name: 'Dima', age: 13},
+//             {model: 'Camry'}];
+//     function f(X) {
+//         let y = [];
+//         y[0] = x[0].name;
+//         y[1] = x[0].age;
+//         y[2] = x[1].model;
+//
+//         return y;
+//     }
+// console.log(f(x))
+//
+
     let x = [{name: 'Dima', age: 13},
-            {model: 'Camry'}];
+        {model: 'Camry'}];
     function f(X) {
         let y = [];
-        y[0] = x[0].name;
-        y[1] = x[0].age;
-        y[2] = x[1].model;
-
+        for (const xElement of x) {
+            for (const [key, value] of Object.entries(xElement)) {
+                y.push(`${key}`);
+            }
+        }
         return y;
     }
-console.log(f(x))
-
+    console.log(f(x))
 
 
 
