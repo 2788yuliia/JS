@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+    // створити пустий масив, наповнити його 10 об'єктами new User(....)
+    //
+    // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
+
+
+
+    // function User(id, name, surname , email, phone) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.surname = surname;
+    //     this.email = email;
+    //     this.phone = phone;
+    // }
+    // const userArr = [
+    //     new User(1, 'Ivan', 'Gjnjl', '1@gmail.com', 30970000001),
+    //     new User(22, 'Vasyl', 'jkljl', '2@gmail.com', 30680000002),
+    //     new User(3, 'Oleg', 'LKjih', '3@gmail.com', 30680000003),
+    //     new User(4, 'Ihor', 'lkij', '4@gmail.com', 30680000004),
+    //     new User(55, 'Mariya', 'jii', '5@gmail.com', 30680000005),
+    //     new User(6, 'Sasha', 'lkih', '6@gmail.com', 30680000006),
+    //     new User(7, 'Mira', 'uhgy', '7@gmail.com', 30680000007),
+    //     new User(8, 'Olya', 'kugc', '8@gmail.com', 30680000008),
+    //     new User(99, 'Katia', 'hvfrr', '9@gmail.com', 30680000009),
+    //     new User(10, 'Susan', 'liud', '10@gmail.com', 30680000010),
+    // ];
+    // console.log(userArr);
+
+//     let result = userArr.filter(user => {
+//         if (user.id % 2===0){
+//             return user;
+//         }
+//     })
+// console.log(result)
+
+    //
+    // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+    //
+// userArr.sort ((a, b) => a.id - b.id)
+//     console.log(userArr)
+
+
+    // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
+
+    class Client {
+         constructor(id, name, surname, email, phone, order) {
+            this.id = id;
+            this.name = name;
+            this.surname = surname;
+            this.email = email;
+            this.phone = phone;
+            this.order = order;
+        }
+    }
+
+    // створити пустий масив, наповнити його 10 об'єктами Client
+
+    let clientArr = [
+        new Client(1,'Olya','Ova','@gmail.com','09612345678',['a','s']),
+        new Client(2, 'Petro','Ov','@gmail.com','09612345678',['dfg','dh','dhdg']),
+        new Client(3,'Olya','Ova','@gmail.com','09612345678',['set']),
+        new Client(4,'Petro','Ov','@gmail.com','09612345678',['rth','er']),
+        new Client(5,'Olya','Ova','@gmail.com','09612345678',['aetyea','TGD','jy']),
+        new Client(6,'Petro','Ov','@gmail.com','09612345678',['rtj','rj']),
+        new Client(7,'Olya','Ova','@gmail.com','09612345678',['hgn']),
+        new Client(8,'Petro','Ov','@gmail.com','09612345678',['jkj','jh']),
+        new Client(9,'Olya','Ova','@gmail.com','09612345678',['jyg']),
+        new Client(10,'Petro','Ov','@gmail.com','09612345678',['tytr'])
+    ]
+    console.log(clientArr);
+
+
+    // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
+    //
+    //
+    let clientSort = clientArr.sort((u1,u2) => u1.order.length-u2.order.length);
+    console.log(clientSort);
+
+
+
+
+</script>
+</body>
+</html>
